@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ex.sivri">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1617152789997444~4975547472"/>
+        <activity android:name="com.ex.sivri.Burclar.Basak"/>
+        <activity android:name="com.ex.sivri.Burclar.Balik" />
+        <activity android:name="com.ex.sivri.Burclar.Kova" />
+        <activity android:name="com.ex.sivri.Burclar.Oglak" />
+        <activity android:name="com.ex.sivri.Burclar.Yay" />
+        <activity android:name="com.ex.sivri.Burclar.Akrep" />
+        <activity android:name="com.ex.sivri.Burclar.Terazi" />
+        <activity android:name="com.ex.sivri.Burclar.Aslan" />
+        <activity android:name="com.ex.sivri.Burclar.Yengec" />
+        <activity android:name="com.ex.sivri.Burclar.Ikizler" />
+        <activity android:name="com.ex.sivri.Burclar.Boga" />
+        <activity android:name="com.ex.sivri.Burclar.Koc" />
+        <activity android:name="com.ex.sivri.Home" />
+        <activity android:name="com.ex.sivri.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
