@@ -43,18 +43,11 @@ public class Kova extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         kovaAdview.loadAd(adRequest);
 
-        mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-1617152789997444/9791532528");
-        mInterstitialAd.loadAd(new AdRequest.Builder().build());
-        istek();
+
 
     }
 
-    @Override
-    public void onBackPressed() {
-        mInterstitialAd.show();
-        super.onBackPressed();
-    }
+
     public void istek(){
         LayoutInflater Inflater = getLayoutInflater();
         View view = Inflater.inflate(R.layout.dialog, null);

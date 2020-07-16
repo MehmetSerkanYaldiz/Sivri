@@ -34,7 +34,7 @@ public class Akrep extends AppCompatActivity {
     List<Model> models;
     String ask, kariyer, maddi, genel;
     private AdView akrepAdview;
-    private InterstitialAd mInterstitialAd;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,17 +42,11 @@ public class Akrep extends AppCompatActivity {
         akrepAdview = findViewById(R.id.akrepAdView);
         AdRequest adRequest = new AdRequest.Builder().build();
         akrepAdview.loadAd(adRequest);
-        mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-1617152789997444/9791532528");
-        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+
         istek();
 
     }
-    @Override
-    public void onBackPressed() {
-        mInterstitialAd.show();
-        super.onBackPressed();
-    }
+
 
     public void istek(){
         LayoutInflater Inflater = getLayoutInflater();

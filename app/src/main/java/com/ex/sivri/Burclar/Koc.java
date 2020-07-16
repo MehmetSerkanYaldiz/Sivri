@@ -47,19 +47,13 @@ public class Koc extends AppCompatActivity {
         kocAdview.loadAd(adRequest);
 
 
-        mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-1617152789997444/9791532528");
-        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+
 
         istek();
 
     }
 
-    @Override
-    public void onBackPressed() {
-        mInterstitialAd.show();
-        super.onBackPressed();
-    }
+
 
     /* @Override
         public boolean onKeyDown(int keyCode, KeyEvent event) {
