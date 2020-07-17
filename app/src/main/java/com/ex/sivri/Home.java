@@ -22,7 +22,7 @@ import com.google.android.gms.ads.AdView;
 
 public class Home extends AppCompatActivity {
     private AdView mAdView;
-    CardView Koc, Boga, Ikizler, Yengec, Aslan, Basak, Terazi, Akrep, Yay, Oglak, Kova, Balık;
+   CardView Koc, Boga, Ikizler, Yengec, Aslan, Basak, Terazi, Akrep, Yay, Oglak, Kova, Balık;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
